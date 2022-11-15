@@ -1,54 +1,9 @@
-*:where(:not(audio, canvas, iframe, img, svg, video):not(svg *, symbol *)) {
-	all: unset;
-	display: revert;
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(/assets/fonts/helveticaneue.ttc);
+  }
+
+h1, h2, h3, h4, h5, p {
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-a {
-	text-decoration: none;
-}
-
-a,
-button {
-	cursor: revert;
-}
-
-details summary,
-menu,
-ol,
-ul {
-	list-style: none;
-}
-
-img {
-	max-width: 100%;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-textarea {
-	white-space: revert;
-}
-
-::placeholder {
-	all: unset;
-}
-
-iframe {
-	border: unset;
-}
-
-
-
-/* Disclosure triangles. */
-details ::marker,
-details ::-webkit-details-marker {
-	display: none;
-}
