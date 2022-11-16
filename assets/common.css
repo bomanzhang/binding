@@ -3,9 +3,10 @@
     src: url(/assets/fonts/helveticaneue.ttc);
   }
 
-h1, h2, h3, h4, h5, p {
-    font-family: 'Helvetica Neue', sans-serif;
-}
+  @font-face {
+    font-family: "Helvetica";
+    src: url(/assets/fonts/helvetica.ttc);
+  }
 
 /* navigation */ 
 .nav {
@@ -13,8 +14,9 @@ h1, h2, h3, h4, h5, p {
     width:4vw;
     transition: 0.2s ease-in-out;
     margin: auto;
-    cursor:pointer;
-    float:left; 
+    cursor: pointer;
+    float: left; 
+    position:absolute;
 
   }
 
@@ -22,19 +24,53 @@ h1, h2, h3, h4, h5, p {
     transform: rotate(45deg);
     }
 
+/* title */
 
-.container {  display: grid;
+.title {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 4vw;
+}
+
+.main {
+    height: 100vh;
+}
+.container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 2vw 2vw;
     grid-auto-flow: row;
     grid-template-areas:
       "pencil squeegee mouse";
+    place-items: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+  
+  .pencil {
+    grid-area: pencil;
+}
+  
+  .squeegee {
+    grid-area: squeegee;
+}
+  
+  .mouse {
+    grid-area: mouse;
+
   }
-  
-  .pencil { grid-area: pencil; }
-  
-  .squeegee { grid-area: squeegee; }
-  
-  .mouse { grid-area: mouse; }
+
+.bot-title {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    bottom: 0;
+}
+
   
