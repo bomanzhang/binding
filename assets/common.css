@@ -27,11 +27,12 @@
 /* title */
 
 .title {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 3rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 0.01em;
     padding-top: 4vw;
 }
 
