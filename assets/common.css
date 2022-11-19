@@ -15,7 +15,7 @@ h1, h2, h3, h4, p {
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: medium;
   letter-spacing: 0.03em;
 }
 
@@ -125,9 +125,9 @@ p {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
     letter-spacing: 0.03em;
     padding-top: 4vw;
+    font-weight: 500;
 }
 
   @keyframes strike{
@@ -181,11 +181,11 @@ p {
   }
 
 .bot-title {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 0.03em;
 }
 
@@ -221,7 +221,6 @@ p {
   }
   .title {
     font-size: 2.3em;
-    font-weight: bold;
     padding-top: 6vh;
   }
 
