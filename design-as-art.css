@@ -1,5 +1,35 @@
 @media (min-width:320px) {
+ 
+/* bottom nav */
+footer {
+        position: fixed;
+        z-index: 1;
+        bottom: -0.5em;
+}
+    
+footer > img {
+        position:inline-block;
+}
 
+.containernav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+          "pencilnav squeegeenav mousenav";
+    }
+    
+      
+    .pencilnav { grid-area: pencilnav; }
+      
+    .squeegeenav { grid-area: squeegeenav; }
+      
+    .mousenav { grid-area: mousenav; }
+      
 body {
     margin: 2em;
 }
@@ -9,13 +39,21 @@ p {
     padding: 0.5em;
 }
 
-footer {
-    position: fixed;
-    z-index: 1;
-    bottom: 0;
+main {
+    padding-bottom: 4em;
 }
 
-footer > img {
-    position:inline-block;
+.title {
+    text-align: left;
+}
+
+.title > h2 {
+    text-transform: normal;
+    font-size: 0.8em;
+}
+
+.heroimg {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 }
