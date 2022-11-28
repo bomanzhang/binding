@@ -43,6 +43,13 @@ main {
     padding-bottom: 4em;
 }
 
+.nav {
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    margin: 0.3em;
+  }
+  
 .title {
     text-align: left;
 }
@@ -56,4 +63,8 @@ main {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
 }
+
+p.thicc {
+    font-weight: bold;
+  }
 }
