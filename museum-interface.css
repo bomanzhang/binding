@@ -1,59 +1,168 @@
 body {
     margin: 2em;
+    max-height: 100%;
 }
 
 .museumcontainer {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 2em 2em; 
-    grid-template-areas: 
-      "article article endnotes"
-      ". . ."
-      ". . ."; 
-  }
-  .article { grid-area: article; }
-  .endnotes { grid-area: endnotes; }
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows:  0.05fr 1fr;; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "articlehead articlehead authornotes"
+    "article article endnotes"
+    ". . ."; 
+}
 
-  h1 {
+.articlehead { grid-area: articlehead; }
+.authornotes { grid-area: authornotes; }
+.article { grid-area: article; }
+.endnotes { grid-area: endnotes; }
+
+h1 {
     letter-spacing: -1.2px !important;
-  }
+}
 
-  b {
+b {
     font-weight: 700;
-  }
+}
 
-  .museumtitle {
+sup {
+  vertical-align: super;
+  font-size: 0.7em;
+  position: absolute;
+}
+
+.fakenav {
+  padding-top: 4em;
+  padding-bottom: 0;
+}
+
+hr {
+  border-top: 1px solid black;
+}
+
+.museumtitle {
     font-size: 4em;
     font-weight: 500;
     line-height: 1em;
-    padding-top: 2em;
+    padding-top: 0.6em;
     padding-bottom: 0.5em;
-  }
+}
 
-  .museumauthor {
+.authornotes {
+    margin: 2em;
+    padding-top: 0.5em;
+    padding-left: 4em;
+}
+
+.authornotes > p {
+  font-size: 1em;
+  padding-bottom: 0;
+}
+
+.museumauthor {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.1em;
     padding-bottom: 1.5em;
-  }
+}
 
-  .article {
+.article {
     border: 1px solid black;
     padding: 2em;
-  }
+}
 
-  .museumhero {
+.museumhero {
+  position: relative;
+  width: auto;
+}
+
+.heroimg {
     min-width: 100%;
     display: block;
-  }
+}
 
-  .herocaption {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #A2C6E7;
+  mix-blend-mode: multiply;
+}
+
+.museumhero:hover .overlay {
+  opacity: 1;
+}
+
+.herocaption {
+    font-size: 0.9em;
     padding-top: 1em;
-    padding-bottom: 4em;
-  }
+    padding-bottom: 2em;
+}
 
-  .article > p {
+.article > p {
     font-size: 1.2em;
     padding-bottom: 1.2em;
     line-height: 1.4em;
-  }
+}
+
+.endnotes {
+  margin: 2em;
+  padding-left: 4em;
+}
+
+.endone {
+  position: absolute;
+  font-size: 0.8em;
+  padding-top: 300vh;
+  padding-right: 6em;
+}
+
+.endone p:hover {
+  background-color: #A2C6E7;
+  opacity: 90%;
+}
+
+.endtwo {
+  position: absolute;
+  font-size: 0.8em;
+  padding-top: 737vh;
+}
+
+.endtwo p:hover {
+  background-color: #A2C6E7;
+  opacity: 90%;
+}
+
+.endthree {
+  position: absolute;
+  font-size: 0.8em;
+  padding-top: 750vh;
+}
+
+.endthree p:hover {
+  background-color: #A2C6E7;
+  opacity: 90%;
+}
+
+h1:hover {
+  background-color: #A2C6E7;
+  opacity: 90%;
+}
+
+h2:hover {
+  background-color: #A2C6E7;
+  opacity: 90%;
+}
+
+p:hover {
+  background-color: #A2C6E7;
+  opacity: 90%;
+}
+
