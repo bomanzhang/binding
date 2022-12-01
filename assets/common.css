@@ -21,10 +21,11 @@ h1, h3, h4 {
   letter-spacing: 0.03em;
 }
 
-p {
+/* p {
   font-size: 1.2em;
-}
+} */
 
+nobr { white-space: nowrap; }
 
 /* navigation */ 
 button {
@@ -202,7 +203,7 @@ button {
   padding-left: 10vw;
   padding-right: 10vw;
 }
-
+/* 
 @media (min-width:320px) {
   
   button img {
@@ -214,12 +215,12 @@ button {
   }
 
   
-  /* .modal-body > h2 {
+  .modal-body > h2 {
     font-size: 1.8em;
     padding-top: 0.6em;
     padding-bottom: 1.2em;
     text-align: center;
-  } */
+  }
 
   .modal-body > p {
     font-size: 1.2em;
@@ -250,4 +251,4 @@ button {
   .bot-title {
     font-size: 2.2em;
   }
-}
+} */
