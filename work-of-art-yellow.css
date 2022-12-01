@@ -1,7 +1,22 @@
 body {
     margin: 4em;
 }
+.circles {
+    position: absolute;
+    right: 6vw;
+    z-index: 1;
+    top: 2em;
+}
 
+.dot {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    margin: 2em;
+    display:block;
+    position: relative;
+  }
+  
 .paper {
     display: block;
     position: relative;
@@ -121,4 +136,15 @@ body {
     font-size: 3vh;
     mix-blend-mode: multiply;
     padding-bottom: 4em;
+}
+
+.signature {
+    position: absolute;
+    font-family: 'Kristi', display;
+    font-size: 2em;
+    letter-spacing: 0.5px;
+    color: #999;
+    opacity: 95%;
+    padding-left: 1em;
+    padding-bottom: 1em;
 }
