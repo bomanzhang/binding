@@ -3,7 +3,7 @@ body {
 }
 .circles {
     position: absolute;
-    right: 6vw;
+    right: 4vw;
     z-index: 1;
     top: 2em;
 }
@@ -15,14 +15,13 @@ body {
     margin: 2em;
     display:block;
     position: relative;
-}
+  }
 
 a .dot:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.5);
     cursor: pointer;
 }
-  
 .paper {
     display: block;
     position: relative;
@@ -129,7 +128,9 @@ a .dot:hover {
 
 }
 
-.bodycopy > p {
+p {
+    font-size: 1.4em;
+    line-height: 1.5em;
     padding-bottom: 2em;
 }
 
