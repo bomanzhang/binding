@@ -1,0 +1,80 @@
+body {
+    margin: 4em;
+}
+
+.paper {
+    display: block;
+    position: relative;
+    background-image: url(assets/img/blank_paper2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 80vw;
+}
+
+.papercontents {
+    display: grid;
+    top: 0;
+    height: 180vh;
+    width: 80vw;
+    overflow: scroll;
+}
+
+.title {
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    color: #FE0075;
+}
+
+.title > h1 {
+    font-size: 6vh;
+    padding-bottom: 1em;
+    mix-blend-mode: multiply;
+}
+
+.title > h2 {
+    font-family: 'EB Garamond', serif;
+    text-transform: none;
+    font-style: italic;
+    font-size: 0.8em;
+    mix-blend-mode: multiply;
+}
+
+.riso {
+    padding: 4.5em;
+    mix-blend-mode: multiply;
+}
+
+.bodycopy {
+    font-size: 2vh;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+}
+
+.bodycopy > p {
+    padding-bottom: 2em;
+}
+
+.bodycopy > h4 {
+    font-family: 'EB Garamond', serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 3vh;
+    padding-bottom: 2em;
+}
+
+.quoted {
+    font-family: 'EB Garamond', serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 3vh;
+    color: #FE0075;
+    mix-blend-mode: multiply;
+    padding-bottom: 4em;
+}
