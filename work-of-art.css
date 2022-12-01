@@ -81,7 +81,9 @@ a .dot:hover {
 
 }
 
-.bodycopy > p {
+p {
+    font-size: 1.4em;
+    line-height: 1.5em;
     padding-bottom: 2em;
 }
 
@@ -117,8 +119,9 @@ a .dot:hover {
     padding-bottom: 1em;
 }
 
-@media (min-width:320px) {
-    body {
+@media only screen and (max-width:768px) and (min-width:200px)
+{
+   body {
         margin: 1em;
         margin-top: 5em;
     }
@@ -152,7 +155,7 @@ a .dot:hover {
     .papercontents {
         top: 0;
         height: auto;
-        width: 90vw;
+        width: 92vw;
     }
     
     .title {
@@ -175,6 +178,7 @@ a .dot:hover {
     
     .riso {
         padding: 1em;
+        padding-bottom: 2em;
     }
 
 
@@ -192,8 +196,10 @@ a .dot:hover {
     
     }
     
-    .bodycopy > p {
-        padding-bottom: 1em !important;
+    p {
+        font-size: 1.1em;
+        line-height: 1.2em;
+        padding-bottom: 1.5em;
     }
     
     .bodycopy > h4 {
@@ -204,7 +210,7 @@ a .dot:hover {
     
     .signature {
         font-size: 1.5em;
-        padding-left: 0.5em;
-        padding-top: 2em;
+        padding-left: 1em;
+        padding-top: 1em;
     }
 }
