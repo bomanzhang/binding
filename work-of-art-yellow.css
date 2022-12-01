@@ -128,19 +128,13 @@ a .dot:hover {
 
 }
 
-p {
-    font-size: 1.4em;
-    line-height: 1.5em;
-    padding-bottom: 2em;
-}
-
 .bodycopy > h4 {
     font-family: 'EB Garamond', serif;
     text-transform: none;
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0.1px;
-    font-size: 3vh;
+    font-size: 1.4em;
     padding-bottom: 2em;
 }
 
@@ -150,7 +144,7 @@ p {
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0.1px;
-    font-size: 3vh;
+    font-size: 1.4em;
     mix-blend-mode: multiply;
     padding-bottom: 4em;
 }

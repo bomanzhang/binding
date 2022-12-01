@@ -21,9 +21,11 @@ h1, h3, h4 {
   letter-spacing: 0.03em;
 }
 
-/* p {
+p {
   font-size: 1.2em;
-} */
+  line-height:1.4em;
+  padding-bottom: 1.2em;
+}
 
 nobr { white-space: nowrap; }
 
