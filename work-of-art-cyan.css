@@ -225,6 +225,8 @@ p {
         padding-right: 1.3em;
     
     }
+
+    
     
     .riso {
         padding: 1em;
@@ -263,4 +265,123 @@ p {
         padding-left: 1em;
         padding-top: 1em;
     }
+}
+
+@media print {
+
+    @page {
+        margin-top: 1in;
+        margin-bottom: 1.5in !important;
+        orphans: 4;
+        widows: 4;
+    }
+
+    @page :first {
+        margin-top: 0.5in;
+    }
+
+    body {
+        margin: 0.5in;
+    }
+
+    .circles {
+        position: absolute;
+        top: 0;
+        right: 0.1in;
+    }
+    
+    .dot {
+        margin: 0.1in;
+        display:inline-block;
+      }
+    
+    .paper {
+        display: block;
+        position: relative;
+        background-image: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .papercontents {
+        top: 0;
+        height: auto;
+        width: 100%;
+    }
+    
+    .title {
+        padding-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0.5in;
+    }
+    
+    .title > h1 {
+        font-size: 3.2vh;
+        padding-bottom: 0.2in;
+    }
+    
+    .author {
+        font-size: 1.8em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .title > span {
+        color: #009BE7;
+        font-size: 3.2vh;
+        top: 1.6em;
+        padding-left:2px;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    
+    .author > span {
+        color: #009BE7;
+        top: 14.9vh;
+        padding-left:2px;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    .riso {
+        padding: 0;
+        padding-top: 0.5in;
+        padding-bottom: 0.5in;
+    }
+
+    .quoted {
+        font-size: 16px;
+        mix-blend-mode: multiply;
+        padding-bottom: 0.2in;
+    }
+    
+    .bodycopy {
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+        overflow: none;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 0.2in;
+    }
+    
+    .bodycopy > h4 {
+        font-weight: 500;
+        font-size: 16px;
+        padding-bottom: 0.2in;
+    }
+    
+    .signature {
+        font-size: 10px;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    
 }
