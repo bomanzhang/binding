@@ -1,0 +1,48 @@
+body {
+    margin: 2em;
+}
+
+.museumcontainer {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 2em 2em; 
+    grid-template-areas: 
+      "article article endnotes"
+      ". . ."
+      ". . ."; 
+  }
+  .article { grid-area: article; }
+  .endnotes { grid-area: endnotes; }
+
+  h1 {
+    letter-spacing: -1.2px !important;
+  }
+
+  .museumtitle {
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 1em;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+  }
+
+  .museumauthor {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.1em;
+    padding-bottom: 1.5em;
+  }
+
+  .article {
+    border: 1px solid black;
+    padding: 2em;
+  }
+
+  .museumhero {
+    min-width: 100%;
+    display: block;
+  }
+
+  caption {
+    font-family: 'Helvetica', sans-serif;
+  }
