@@ -44,6 +44,28 @@ body {
     padding-right: 2em;
 }
 
+
+
+.title > span {
+    color: #009BE7;
+    font-size: 6vh;
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: 1;
+    top: 1.5em;
+    padding-left:2px;
+}
+
+.author > span {
+    color: #009BE7;
+    position: absolute;
+    z-index: 1;
+    top: 29.7vh;
+    padding-left:2px;
+    mix-blend-mode: multiply;
+
+}
+
 .riso {
     padding: 4.5em;
     mix-blend-mode: multiply;

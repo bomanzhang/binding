@@ -10,12 +10,12 @@
     src: url(/assets/fonts/helvetica.ttc);
   }
 
-h1, h2, h3, h4, p {
+h1, p {
   font-family: 'Helvetica Neue', sans-serif;
   letter-spacing: 0.01em;
 }
 
-h1, h2, h3, h4 {
+h1, h3, h4 {
   text-transform: uppercase;
   font-weight: medium;
   letter-spacing: 0.03em;
@@ -203,12 +203,13 @@ p {
     padding: 2em;
   }
 
-  .modal-body > h2 {
+  
+  /* .modal-body > h2 {
     font-size: 1.8em;
     padding-top: 0.6em;
     padding-bottom: 1.2em;
     text-align: center;
-  }
+  } */
 
   .modal-body > p {
     font-size: 1.2em;
