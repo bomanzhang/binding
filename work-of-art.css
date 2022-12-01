@@ -30,9 +30,8 @@ a .dot:hover {
     background-image: url(assets/img/blank_paper2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 190vh;
-    width: 81.2vw;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 200vh;
+    width: 80vw;
 }
 
 .papercontents {
