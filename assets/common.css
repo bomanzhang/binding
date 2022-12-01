@@ -204,6 +204,10 @@ button {
 }
 
 @media (min-width:320px) {
+  
+  button img {
+    width: 80px;
+  }
 
   .modal-body {
     padding: 2em;

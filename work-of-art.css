@@ -18,7 +18,7 @@ body {
     position: relative;
   }
 
-.dot:hover {
+a .dot:hover {
     transition: all .3s ease-in-out;
     transform: scale(1.5);
     cursor: pointer;
@@ -115,4 +115,101 @@ body {
     opacity: 95%;
     padding-left: 1em;
     padding-bottom: 1em;
+}
+
+@media (min-width:320px) {
+    body {
+        margin: 1em;
+        margin-top: 5em;
+    }
+    
+    .circles {
+        position: absolute;
+        right: 1vw;
+        z-index: 1;
+        top: 0.5em;
+    }
+    
+    .dot {
+        height: 2em;
+        width: 2em;
+        border-radius: 50%;
+        margin: 1em;
+        display: inline-block;
+    }
+    
+    .paper {
+        display: block;
+        position: relative;
+        background-image: url(assets/img/blank_paper2.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+        height: 100vh;
+        width: 92vw;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .papercontents {
+        top: 0;
+        height: auto;
+        width: 90vw;
+    }
+    
+    .title {
+        text-align: left;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+    }
+    
+    .title > h1 {
+        font-size: 3.4vh;
+        padding-bottom: 1em;
+    }
+    
+    .author {
+        font-size: 2.9vh;
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+    }
+    
+    .riso {
+        padding: 1em;
+    }
+
+
+    .quoted {
+        font-size: 2.3vh;
+        padding-bottom: 2em;
+    }
+
+    .bodycopy {
+        font-size: 2vh;
+        padding-left: 4.5em;
+        padding-right: 4.5em;
+        height: 90vh;
+        overflow: scroll;
+    
+    }
+    
+    .bodycopy > p {
+        padding-bottom: 2em;
+    }
+    
+    .bodycopy > h4 {
+        font-size: 3vh;
+        padding-bottom: 2em;
+    }
+    
+    
+    .signature {
+        position: absolute;
+        font-family: 'Kristi', display;
+        font-size: 2em;
+        letter-spacing: 0.5px;
+        color: #999;
+        opacity: 95%;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
 }
