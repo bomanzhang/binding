@@ -7,35 +7,47 @@
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/common.css">
     <title>Design is NOT Art</title>
+    <style>
+      body {
+  overflow: hidden;
+}
+    </style>
 </head>
 <body>
     <header>
       <button id="navbtn"><img src="assets/img/nav.png" alt="nav-cross" width="50px"></button>
-      <div id="mymodal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close">&times;</span>
-          </div>
-          <div class="modal-body">
-            <h2>Introduction</h2>
-            <p>The discourse surrounding the relationship between design and art has been a time&shy;less debate. Spend time with artists and designers alike, a surefire way to stir the pot would be to equate design to art, or vice versa. This collection of texts explores different facets of this fraught relation&shy;ship and how it has evolved over time with the advent of technology, each generation more sophisti&shy;cated than the next.</p>
-            <p>The earliest work is by Philosopher Walter Benjamin, ‘The Work of Art in the Age of Mechanical Reproduction’ in 1935. In his essay, Benjamin explains that ‘mechanical reproduction’ is not a modern invention as artists have historically copied master artists and print&shy;making processes have been around for centuries. However, he argues that mechanically reproduced art lacks unique&shy;ness (aura) and artistic authenticity.</p>  
-            <p>The 1966 book, ‘Design as Art’ is featured in this collection. Written by Bruno Munari, an Italian multidisciplinary artist and designer who argues that the designer is the modern day artist, as the ‘pure arts’ continuously move further away from the public realm. It is modern design that remains accessible and enjoyed by the general public. The book delves into artistic methods a designer can use, accompanied with illustra&shy;tions and diagrams.</p>
-            <p>The last text featured is a contemporary article written in 2014 in Art in America titled ‘The Museum Interface’ that consists of a conversation between two designers working in the art industry, Sarah Hromack and Rob Giampeitro. The two assess the impact technology and digital media has had on cultural institutions. This article covers a myriad of themes such as website inter&shy;faces, online social interaction and technologies that are or might be implemented such as AR/VR.</p>
-          </div>
-        </div>
+      <div id="info"><h1>INFO</h1></div>
+  <!-- Modal content -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close"><img src="assets/img/nav.png" alt="nav-cross" width="50px"></span>
+      <div class="modalheader">
+        <h2>Introduction</h2>
+        <h3>Sarah Zhang, 2022</h3>
       </div>
+      <div class="modalbody">
+        <p>The discourse surrounding the relationship between design and art has been a time&shy;less debate. Spend time with artists and designers alike, a surefire way to stir the pot would be to equate design to art, or vice versa. This collection of texts explores different facets of this fraught relation&shy;ship and how it has evolved over time with the advent of technology, each generation more sophisti&shy;cated than the next.</p>
+        <p>The earliest work is by Philosopher Walter Benjamin, ‘The Work of Art in the Age of Mechanical Reproduction’ in 1935. In his essay, Benjamin explains that ‘mechanical reproduction’ is not a modern invention as artists have historically copied master artists and print&shy;making processes have been around for centuries. However, he argues that mechanically reproduced art lacks unique&shy;ness (aura) and artistic authenticity.</p>  
+        <p>The 1966 book, ‘Design as Art’ is featured in this collection. Written by Bruno Munari, an Italian multidisciplinary artist and designer who argues that the designer is the modern day artist, as the ‘pure arts’ continuously move further away from the public realm. It is modern design that remains accessible and enjoyed by the general public. The book delves into artistic methods a designer can use, accompanied with illustra&shy;tions and diagrams.</p>
+        <p>The last text featured is a contemporary article written in 2014 in Art in America titled ‘The Museum Interface’ that consists of a conversation between two designers working in the art industry, Sarah Hromack and Rob Giampeitro. The two assess the impact technology and digital media has had on cultural institutions. This article covers a myriad of themes such as website inter&shy;faces, online social interaction and technologies that are or might be implemented such as AR/VR.</p>
+      </div>
+      <div class="colophon">
+        <p>This 'digital book' was created for Typography and Interaction I, a class at Parsons School of Design. Typefaces used are Helvetica, Helvetica Neue, EB Garamond and Homemade Apple. Created by Sarah Zhang, a multidisciplinary designer and Masters student at Parsons.</p>
+      </div>
+    </div>  
+  </div>
 
+</div>
     </header>
     <main>
         <div class="hero">
-          <div class="title">Design is <span class="strike">NOT</span> Art</div>
+          <div class="indextitle">Design is <span class="strike">NOT</span> Art</div>
             <div class="container">
             <div class="pencil">
             <a href="design-as-art.html"><img src="assets/img/pencils.png" alt="pencils" width="auto"></a>
             </div>
-            <div class="squeegee"><img src="assets/img/squeegee.png" alt="squeegee" width="auto"></div>
-            <div class="mouse"><img src="assets/img/mouse.png" alt="computer-mouse" width="auto"></div>
+            <a href="work-of-art.html"><div class="squeegee"><img src="assets/img/squeegee.png" alt="squeegee" width="auto"></div></a>
+            <a href="museum-interface.html"><div class="mouse"><img src="assets/img/mouse.png" alt="computer-mouse" width="auto"></div></a>
             </div>
           <div class="bot-title">Sarah Zhang</div>
         </div>
@@ -44,18 +56,23 @@
 </html>
 
 <script>
-  var modal = document.getElementById("mymodal");
-  var btn = document.getElementById("navbtn");
-  var span = document.getElementsByClassName("close")[0];
-    btn.onclick = function() {
-    modal.style.display = "block";
-    }
-    span.onclick = function() {
+var modal = document.getElementById("myModal");
+
+var div = document.getElementById("info");
+
+var span = document.getElementsByClassName("close")[0];
+
+div.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
     modal.style.display = "none";
-    }
-    window.onclick = function(event) {
-      if (event.target == modal) {
-      modal.style.display = "none";
-      }
-    }
+  }
+}
 </script>

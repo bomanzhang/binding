@@ -3,19 +3,19 @@
 @font-face {
     font-family: "Helvetica Neue";
     src: url(/assets/fonts/helveticaneue.ttc);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "Helvetica";
     src: url(/assets/fonts/helvetica.ttc);
-  }
+}
 
 h1, p {
   font-family: 'Helvetica Neue', sans-serif;
   letter-spacing: 0.01em;
 }
 
-h1, h3, h4 {
+h1, h3, h4{
   text-transform: uppercase;
   font-weight: medium;
   letter-spacing: 0.03em;
@@ -27,9 +27,10 @@ p {
   padding-bottom: 1.2em;
 }
 
-nobr { white-space: nowrap; }
+nobr {
+white-space: nowrap;
+}
 
-/* navigation */ 
 button {
   top: 0;
   left: 0;
@@ -37,69 +38,98 @@ button {
   z-index: 2;
 }
 
-.nav {
-    height:4vw;
-    width:4vw;
-    transition: 0.2s ease-in-out;
-    margin: auto;
-    cursor: pointer;
-    float: left; 
-    position:absolute;
+button:hover {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  rotate: -45deg;
+}
 
-  }
+#info {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding-top: 0.1em;
+  padding-right:0.2em;
+  top: 0;
+  right: 0;
+}
 
-.nav:hover{
-    transform: rotate(45deg);
-    }
+#info:hover{
+  text-decoration: line-through;
+  cursor: pointer;
+}
 
-    /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 6em;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
 }
 
-/* Modal Content */
 .modal-content {
-  position: relative;
-  background-color: #fefefe;
+  background-color: white;
   margin: auto;
   padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+  width: 60%;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+.modalheader {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-bottom: 1em;
+  padding-top: 5em;
 }
 
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+.modalheader > h2 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-/* nav pop up */
+.modalheader > h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  font-weight: normal;
+  padding-top: 0.2em;
+}
+
+.modalbody {
+  padding: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.colophon {
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 0;
+  padding-bottom: 4em;
+}
+
+.colophon > p {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+}
+
 .close {
+  position: relative;
   color: black;
+  top: 0;
+  right: 0;
   float: right;
-  font-size: 30px;
-  font-weight: bold;
-  padding-top: 5px;
 }
 
 .close:hover,
@@ -107,30 +137,56 @@ button {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  rotate: 45deg;
+  transition: 0.5s ease-in-out;
 }
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: none;
-  color: black;
+.indextitle {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding-top: 8vh;
+  letter-spacing: 0.03em;
 }
 
-.modal-body {
-  padding: 2em;
-  hyphens: manual;
-
+@keyframes strike{
+  0%   { width : 0; }
+  50%  {width: 100%}
+  100% {width: 0;}
+}
+.strike {
+  position: relative;
+}
+.strike::after {
+  content: ' ';
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: black;
+  animation-name: strike;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards; 
 }
 
-/* nav pop up ends */
-
-
-/* hero */
+.bot-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 
 .hero {
   height: 100vh;
 }
-
-/* title */
 
 .title {
     font-family: 'Helvetica Neue', sans-serif;
@@ -141,28 +197,6 @@ button {
     padding-top: 4vw;
     font-weight: 500;
 }
-
-  @keyframes strike{
-    0%   { width : 0; }
-    100% { width: 100%; }
-  }
-  .strike {
-    position: relative;
-  }
-  .strike::after {
-    content: ' ';
-    position: absolute;
-    top: 45%;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: black;
-    animation-name: strike;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; 
-  }
 
 .main {
     height: 100vh;
@@ -181,31 +215,50 @@ button {
   
   .pencil {
     grid-area: pencil;
+    
+}
+
+ .pencil:hover {
+ animation: shake 0.9s;
+ animation-iteration-count: infinite;
+ cursor: pointer;
+ }
+
+@keyframes shake {
+ 0% { transform: translate(1px, 1px) rotate(0deg); }
+ 10% { transform: translate(-1px, -2px) rotate(-1deg); }
+ 20% { transform: translate(-3px, 0px) rotate(1deg); }
+ 30% { transform: translate(3px, 2px) rotate(0deg); }
+ 40% { transform: translate(1px, -1px) rotate(1deg); }
+ 50% { transform: translate(-1px, 2px) rotate(-1deg); }
+ 60% { transform: translate(-3px, 1px) rotate(0deg); }
+ 70% { transform: translate(3px, 1px) rotate(-1deg); }
+ 80% { transform: translate(-1px, -1px) rotate(1deg); }
+ 90% { transform: translate(1px, 2px) rotate(0deg); }
+ 100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
   
   .squeegee {
     grid-area: squeegee;
 }
+
+.squeegee:hover {
+  animation: shake 0.9s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+  }
   
   .mouse {
     grid-area: mouse;
 
   }
 
-.bot-title {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-}
+  .mouse:hover {
+    animation: shake 0.9s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    }
 
-.intro {
-  margin: 2em;
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
 /* 
 @media (min-width:320px) {
   

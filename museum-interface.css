@@ -1,3 +1,7 @@
+html {
+  cursor: crosshair;
+}
+
 body {
     margin: 2em;
     max-height: 100%;
