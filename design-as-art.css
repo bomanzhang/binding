@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .notebook {
     position: fixed;
     z-index: -99;
@@ -6,12 +10,22 @@
 }
 
 .bodycontainer {
+    position: fixed;
     height: 80vh;
     width: 85vh;
     margin-top: 22vh;
     margin-left: 6.3vw;
     overflow: scroll;
 }
+
+.bodycontainer::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.bodycontainer:hover {
+    cursor: ns-resize;
+}
+
 
 header {
     font-family: 'Helvetica', sans-serif;
@@ -22,9 +36,235 @@ header {
 header > h1 {
     font-size: 7vh;
     font-weight: 500;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+    padding-bottom: 1vh;
 }
 
 header > h2 {
-    font-family: 'Kristi', display;
-    font-size: 7vh;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 4vh;
+    font-weight: 500;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+    padding-bottom: 4vh;
 }
+
+.reading > h3 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 3vh;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+    text-transform: none;
+    rotate: -5deg;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 10vh;
+}
+
+.quote {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 3vh;
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+    text-transform: none;
+    rotate: 5deg;
+    padding-left: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+    text-align: right;
+}
+#mydivheader {
+    padding: 10px;
+    cursor: grab;
+    z-index: 9;
+    background-color: none;
+  }
+
+#book {
+    position: fixed;
+    z-index: 9;
+    left: 70vw;
+    width: 500px;
+    height: 90vh;
+  }
+  
+  #stickynote {
+    position: fixed;
+    z-index: 10;
+    top: 20vh;
+    left: 60vw;
+    width: 500px;
+  }
+
+
+  #pencil {
+    position: absolute;
+    z-index: 11;
+    left: 60vw;
+    height: 500px;
+  }
+
+  @media only screen and (max-width:768px) and (min-width:200px)
+  {
+    html, body {
+        overflow-y: hidden;
+      }
+
+      body {
+        position: relative;
+        width: 100%;
+      }
+
+    .notebook {
+        position: absolute;
+        z-index: -99;
+        width: 150%;
+        top: 2vh;
+        margin-left: -10vw;
+        height: 150%;
+    }
+
+    .bodycontainer {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 15vh;
+        margin-left: 1.2em;
+        padding-right: 5.7em;
+        overflow: scroll;
+    }
+    
+    header > h1 {
+        font-size: 4.4vh;
+        padding-bottom: 1vh;
+    }
+    
+    header > h2 {
+        font-size: 3vh;
+        padding-bottom: 4vh;
+    }
+    
+    .reading > h3 {
+        font-family: 'Homemade Apple', cursive;
+        font-size: 2.5vh;
+        mix-blend-mode: multiply;
+        opacity: 0.9;
+        text-transform: none;
+        rotate: -5deg;
+        padding-left: 2vw;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+    }
+
+    .reading > p {
+        font-size: 1em;
+    }
+    
+    .quote {
+        font-size: 2vh;
+        padding-bottom: 30vh;
+        padding-left: 0;
+        margin-right: 0;
+        text-align: left;
+
+    }
+
+    #mydivheader {
+        display:none;
+      }
+    
+    #book {
+        display:none;
+      }
+      
+      #stickynote {
+        display:none;
+      }
+    
+    
+      #pencil {
+        display:none;
+      }
+  }
+
+  @media print {
+
+    @page {
+        margin: 1.5cm;
+    }
+
+    body {
+        overflow: visible;
+    }
+
+    .notebook {
+        position: relative;
+        z-index: -99;
+        width: 40%;
+        top: 0vh;
+    }
+
+    .bodycontainer {
+        position: relative;
+        height: auto;
+        width: 85vh;
+        margin-top: 10vh;
+        margin-left: 0vw;
+        overflow: scroll;
+    }
+    
+    header > h1 {
+        font-size: 30pt;
+        font-weight: 500;
+        margin-top: 0;
+        margin-left: 1em;
+    }
+    
+    header > h2 {
+        font-family: 'Helvetica', sans-serif;
+        font-size: 18pt;
+        font-weight: 500;
+        padding-bottom: 4vh;
+        margin-left: 1.5em;
+    }
+
+
+    .reading > h3 {
+        font-size: 16pt;
+        rotate: -5deg;
+        padding-left: 15vw;
+        padding-top: 21vh;
+        padding-bottom: 25vh;
+    }
+
+    .reading > p {
+        margin-left: 0;
+        font-size: 1em;
+    }
+    
+    .quote {
+        font-size: 2vh;
+        padding-bottom: 30vh;
+        padding-left: 0;
+        margin-right: 0;
+        text-align: left;
+
+    }
+    
+    #book {
+        position: absolute;
+        width: 400px;
+      }
+      
+      #stickynote {
+        position: absolute;
+        width: 300px;
+      }
+    
+      #pencil {
+        position: absolute;
+        height: 100px;
+      }
+
+  }
