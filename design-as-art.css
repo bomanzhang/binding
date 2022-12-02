@@ -215,27 +215,27 @@ header > h2 {
     }
     
     header > h1 {
-        font-size: 30pt;
+        font-size: 48pt;
         font-weight: 500;
         margin-top: 0;
-        margin-left: 1em;
+        margin-left: 0em;
     }
     
     header > h2 {
         font-family: 'Helvetica', sans-serif;
-        font-size: 18pt;
+        font-size: 32pt;
         font-weight: 500;
         padding-bottom: 4vh;
-        margin-left: 1.5em;
+        margin-left: 0em;
     }
 
 
     .reading > h3 {
-        font-size: 16pt;
+        font-size: 20pt;
         rotate: -5deg;
-        padding-left: 15vw;
-        padding-top: 21vh;
-        padding-bottom: 25vh;
+        padding-left: 0vw;
+        padding-top: 0vh;
+        padding-bottom: 10vh;
     }
 
     .reading > p {
@@ -247,14 +247,18 @@ header > h2 {
         font-size: 2vh;
         padding-bottom: 30vh;
         padding-left: 0;
-        margin-right: 0;
-        text-align: left;
+        padding-top: 10vh;
+        margin-right: 2em;
+        text-align: right;
 
     }
     
     #book {
         position: absolute;
-        width: 400px;
+        z-index: 9;
+        left: 78vw;
+        width: 35%;
+        top: 0;
       }
       
       #stickynote {
@@ -264,7 +268,9 @@ header > h2 {
     
       #pencil {
         position: absolute;
-        height: 100px;
+        height: 80px;
+        top: 0;
+        left: 50vw;
       }
 
   }
