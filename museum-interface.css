@@ -166,3 +166,179 @@ p:hover {
   opacity: 90%;
 }
 
+.fakenav2 {
+  margin-top: -2em;
+  margin-bottom: 4em;
+}
+
+@media only screen and (max-width:768px) and (min-width:200px)
+{
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+    margin: 1em;
+    max-height: 100%;
+  }
+
+  .museumcontainer {
+  display: block; 
+  }
+
+  .authornotes {
+    margin: 0em;
+    padding-top: 1em;
+    padding-left: 0;
+  }
+
+.authornotes > p {
+  font-size: 1em;
+  padding-bottom: 0;
+}
+
+.museumauthor {
+  font-size: 1.2em;
+}
+
+.article {
+  border: 1px solid black;
+  padding: 2em;
+  margin-top: 3em;
+}
+
+.museumhero {
+position: relative;
+width: auto;
+}
+
+.heroimg {
+  min-width: 100%;
+  display: block;
+}
+
+.endnotes {
+  display: none;
+}
+
+.fakenav2 {
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+}
+
+@media print {
+
+  @page {
+      margin-top: 1in;
+      margin-bottom: 1.5in !important;
+      orphans: 4;
+      widows: 4;
+  }
+
+  @page :first {
+      margin-top: 0;
+  }
+
+  body {
+      margin: 0.5in;
+  }
+  .fakenav {
+    padding-top: 2em;
+    padding-bottom: 0;
+  }
+  
+  hr {
+    border-top: 1px solid black;
+  }
+  
+  .museumcontainer {
+    grid-template-rows:  0.014fr 1fr;; 
+  }
+
+  .museumtitle {
+      font-size: 48px;
+  }
+
+  .authornotes {
+      margin: 0;
+      padding-top: 0; 
+      padding-left: 1em;
+      margin-top: 2em;
+  }
+
+  .authornotes > p {
+    font-size: 10px;
+    padding-bottom: 0;
+  }
+
+  .museumauthor {
+    font-size: 14px;
+    padding-bottom: 1.5em;
+}
+
+.herocaption {
+  font-size: 10px;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.herocaption > p {
+  font-size: 10px;
+}
+
+.article {
+  padding: 1em;
+}
+
+.article > p {
+  font-size: 12px;
+  padding-bottom: 1.2em;
+  line-height: 1.4em;
+}
+
+.endnotes {
+margin: 2em;
+padding-left: 3.5em;
+}
+
+.endone {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 163vh;
+  padding-right: 2em;
+}
+
+.endone > p {
+  font-size: 10px !important;
+}
+
+.endtwo {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 471.5vh;
+  padding-right: 2em;
+}
+
+.endtwo > p {
+  font-size: 10px !important;
+}
+
+.endthree {
+  position: absolute;
+  font-size: 10px;
+  padding-top: 480vh;
+}
+
+.endthree > p {
+  font-size: 10px !important;
+}
+
+.fakenav2 {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+}
