@@ -129,12 +129,12 @@ a .dot:hover {
 
 .signature {
     position: absolute;
-    font-family: 'Kristi', display;
-    font-size: 2em;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1em;
     letter-spacing: 0.5px;
     color: #999;
     opacity: 95%;
-    padding-left: 1em;
+    margin-left: 2em;
     padding-bottom: 1em;
 }
 
@@ -220,13 +220,11 @@ a .dot:hover {
     
     }
 
-    
-    
+
     .riso {
         padding: 1em;
         padding-bottom: 2em;
     }
-
 
     .quoted {
         font-size: 2.3vh;
@@ -255,9 +253,9 @@ a .dot:hover {
     
     
     .signature {
-        font-size: 1.5em;
-        padding-left: 1em;
-        padding-top: 1em;
+        font-size: 0.8em;
+        padding-left: 0em;
+        padding-top: 2em;
     }
 }
 

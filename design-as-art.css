@@ -1,70 +1,30 @@
-@media (min-width:320px) {
- 
-/* bottom nav */
-footer {
-        position: fixed;
-        z-index: 1;
-        bottom: -0.5em;
-}
-    
-footer > img {
-        position:inline-block;
+.notebook {
+    position: fixed;
+    z-index: -99;
+    width: 60%;
+    top: 0vh;
 }
 
-.containernav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: center;
-    justify-items: center;
-    grid-template-areas:
-          "pencilnav squeegeenav mousenav";
-    }
-    
-      
-    .pencilnav { grid-area: pencilnav; }
-      
-    .squeegeenav { grid-area: squeegeenav; }
-      
-    .mousenav { grid-area: mousenav; }
-      
-body {
-    margin: 2em;
+.bodycontainer {
+    height: 80vh;
+    width: 85vh;
+    margin-top: 22vh;
+    margin-left: 6.3vw;
+    overflow: scroll;
 }
 
-p {
-    font-size: 1.2em;
-    padding: 0.5em;
+header {
+    font-family: 'Helvetica', sans-serif;
+    position: relative;
+    padding-top: 0;
 }
 
-main {
-    padding-bottom: 4em;
+header > h1 {
+    font-size: 7vh;
+    font-weight: 500;
 }
 
-.nav {
-    height: 5vh;
-    width: 5vh;
-    position: absolute;
-    margin: 0.3em;
-  }
-  
-.title {
-    text-align: left;
-}
-
-.title > h2 {
-    text-transform: normal;
-    font-size: 0.8em;
-}
-
-.heroimg {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-}
-
-p.thicc {
-    font-weight: bold;
-  }
+header > h2 {
+    font-family: 'Kristi', display;
+    font-size: 7vh;
 }

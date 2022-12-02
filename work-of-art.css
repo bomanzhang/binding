@@ -1,6 +1,5 @@
 body {
     margin: 4em;
-    margin-top: 6em;
 }
 
 .circles {
@@ -65,11 +64,31 @@ a .dot:hover {
     mix-blend-mode: multiply;
     padding-left: 2em;
     padding-right: 2em;
+
 }
 
 .riso {
     padding: 4.5em;
     mix-blend-mode: multiply;
+}
+
+.bodycopy {
+    font-size: 2vh;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    height: 90vh;
+    overflow: scroll;
+
+}
+
+.bodycopy > h4 {
+    font-family: 'EB Garamond', serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 1.4em;
+    padding-bottom: 2em;
 }
 
 .quoted {
@@ -83,32 +102,14 @@ a .dot:hover {
     padding-bottom: 4em;
 }
 
-.bodycopy {
-    font-size: 2vh;
-    padding-left: 4.5em;
-    padding-right: 4.5em;
-    height: 90vh;
-    overflow: scroll;
-}
-
-.bodycopy > h4 {
-    font-family: 'EB Garamond', serif;
-    text-transform: none;
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    font-size: 1.4em;
-    padding-bottom: 2em;
-}
-
 .signature {
     position: absolute;
-    font-family: 'Kristi', display;
-    font-size: 2em;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1em;
     letter-spacing: 0.5px;
     color: #999;
     opacity: 95%;
-    padding-left: 1em;
+    margin-left: 2em;
     padding-bottom: 1em;
 }
 
@@ -168,7 +169,7 @@ a .dot:hover {
         padding-left: 1.3em;
         padding-right: 1.3em;
     }
-    
+  
     .riso {
         padding: 1em;
         padding-bottom: 2em;
@@ -202,9 +203,9 @@ a .dot:hover {
     
     
     .signature {
-        font-size: 1.5em;
-        padding-left: 1em;
-        padding-top: 1em;
+        font-size: 0.8em;
+        padding-left: 0em;
+        padding-top: 2em;
     }
 }
 
@@ -267,7 +268,7 @@ a .dot:hover {
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     .riso {
         padding: 0;
         padding-top: 0.5in;
