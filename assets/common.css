@@ -238,7 +238,7 @@ button:hover {
  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
   
-  .squeegee {
+.squeegee {
     grid-area: squeegee;
 }
 
@@ -246,79 +246,134 @@ button:hover {
   animation: shake 0.9s;
   animation-iteration-count: infinite;
   cursor: pointer;
-  }
+}
   
-  .mouse {
+.mouse {
     grid-area: mouse;
 
-  }
+}
 
-  .mouse:hover {
+.mouse:hover {
     animation: shake 0.9s;
     animation-iteration-count: infinite;
     cursor: pointer;
-    }
+}
 
-/* 
-@media (min-width:320px) {
-  
-  button img {
-    width: 80px;
-  }
+@media only screen and (max-width:768px) and (min-width:200px) {
 
-  .modal-body {
-    padding: 2em;
-  }
+  nobr {
+  white-space: overflow;
+}
 
-  
-  .modal-body > h2 {
-    font-size: 1.8em;
-    padding-top: 0.6em;
-    padding-bottom: 1.2em;
-    text-align: center;
-  }
 
-  .modal-body > p {
-    font-size: 1.2em;
-    padding-bottom: 1em;
-  }
+.indextitle {
+  font-size: 2.3rem;
+}
 
-  .nav {
-    height: 5vh;
-    width: 5vh;
-    position: absolute;
-    margin: 0.3em;
-  }
-  .title {
-    font-size: 2.3em;
-    padding-top: 6vh;
-  }
+.strike::after {
+  height: 4px;
+}
 
-  .container {
-    display: block;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+.bot-title {
+  font-size: 2.3rem;
+}
 
-  .bot-title {
-    font-size: 2.2em;
-  }
-} */
+
+.container {
+  display: block;
+}
+
+.pencil {
+  width: 60%;
+  margin: auto;
+}
+
+.squeegee {
+  width: 60%;
+  margin: auto;
+}
+
+.mouse {
+  width: 60%;
+  margin: auto;
+}
+
+.modal {
+  padding-top: 2em;
+}
+
+.modal-content {
+  width: 85%;
+}
+
+.modalheader {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 3.5em;
+}
+
+.modalheader > h2 {
+  font-size: 2.3em;
+  text-align: center;
+}
+
+.modalheader > h3 {
+  text-align: center;
+}
+
+.modalbody {
+  padding: 1.2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.modalbody > p {
+  font-size: 1.2em;
+}
+
+.colophon {
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
+.close {
+  position: relative;
+  color: black;
+  top: 0;
+  right: 0;
+  float: right;
+  rotate: 45deg;
+}
+
+}
 
 @media print {
 
-    button {
+  button {
       display: none;
-    }    
-}
+  }   
+  
+  .modal {
+      padding-top: 5.2em;
+  }
+    
+  .modal-content {
+      width: 80%;
+  }
 
-@media only screen and (max-width:768px) and (min-width:200px)
-{
-nobr {
-  white-space: overflow;
-}
+
+  .modalbody > p {
+  font-size: 12px;
+  }
+
+  .colophon > p {
+    font-size: 12px;
+  }
+  
+  .close {
+    rotate: 45deg;
+  }
 }
